@@ -1,20 +1,44 @@
-# Auth0 Python Web App Sample
+# CST 8919 Lab 1: Implementing User Login with Flask and Auth0
 
-This sample demonstrates how to add authentication to a Python web app using Auth0.
+This lab shows how to have a starter version of using Flask and Auth0 modules when developing a program for secure authentication.
 
 # Running the App
 
-To run the sample, make sure you have `python3` and `pip` installed.
+To run the program, first you need to have `python3` and `pip` installed in order to install the modules needed for this program.
 
-Rename `.env.example` to `.env` and populate it with the client ID, domain, secret, callback URL and audience for your
-Auth0 app. If you are not implementing any API you can use `https://YOUR_DOMAIN.auth0.com/userinfo` as the audience.
-Also, add the callback URL to the settings section of your Auth0 client.
+Then you need to go into the directory of you program and write:
 
-Register `http://localhost:3000/callback` as `Allowed Callback URLs` and `http://localhost:3000`
-as `Allowed Logout URLs` in your client settings.
+```bash
+pip install -r .\requirements.txt
+```
 
-Run `pip install -r requirements.txt` to install the dependencies and run `python server.py`.
-The app will be served at [http://localhost:3000/](http://localhost:3000/).
+in the command line in order to install all the modules in the requirement.txt file which are flask to have different endpoint and Auth0 to have secure authitcation.
+
+After that, run 
+
+```bash
+openssl rand -hex 32
+```
+and copy the string from the command terminal and pase it in the `APP_SECRET_KEY` enviroment variable in the .env file.
+
+In order to run the program bt writing this in the command line:
+
+```bash
+python server.py
+```
+
+Then you will se this in the command terminal 
+
+```bash
+ * Serving Flask app 'server'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3000
+ * Running on http://192.168.0.248:3000
+```
+
+right click one of the links or open: `http://localhost:3000` to open the webpage of the program you are running.
 
 # Running the App with Docker
 
