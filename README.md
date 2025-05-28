@@ -9,6 +9,7 @@ To run the program, first you need to have `python3` and `pip` installed in orde
 Then you need to go into the directory of you program and write:
 
 ```bash
+.\.venv\Scripts\activate
 pip install -r .\requirements.txt
 ```
 
@@ -42,4 +43,4 @@ Open: `http://localhost:3000` to open the webpage of the program you are running
 
 # Link to to the video on how the program works and documenation on the code
 
-[Video link](https://youtu.be/Z1797S97Xoo)
+[Video link](https://www.youtube.com/watch?v=3reTzkSjqlU)
